@@ -77,7 +77,7 @@ public class SeatServiceImpl implements SeatService {
         int preferencialSeats = Math.min(4, totalSeats / 10);
 
         for (int i = 1; i <= totalSeats; i++) {
-            String seatNumber = String.format("A%02d", i);
+            Integer seatNumber = i;
             SeatType type = i <= preferencialSeats ? SeatType.PREFERENTIAL : SeatType.STANDARD;
 
             Seat seat = Seat.builder()

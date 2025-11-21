@@ -1,0 +1,53 @@
+### Crear un viaje
+POST http://localhost:8080/api/trips
+Content-Type: application/json
+
+{
+  "routeId": 1,
+  "busId": 1,
+  "date": "2025-03-10",
+  "departureAt": "2025-03-10T09:00:00",
+  "arrivalEta": "2025-03-10T12:00:00"
+}
+
+
+### Obtener un viaje por ID
+GET http://localhost:8080/api/trips/1
+
+GET http://localhost:8080/api/trips/SOLD
+
+
+### Listar viajes paginados
+GET http://localhost:8080/api/trips?page=0&size=10
+
+### Buscar viajes disponibles
+GET http://localhost:8080/api/trips/available?origin=Bogota&destination=Medellin&date=2025-03-10T09:00:00
+
+### Buscar viajes por estado
+GET http://localhost:8080/api/trips/status/SCHEDULED
+
+### Actualizar un viaje
+PUT http://localhost:8080/api/trips/1
+Content-Type: application/json
+
+{
+  "date": "2025-03-11",
+  "departureAt": "2025-03-11T10:00:00",
+  "arrivalEta": "2025-03-11T13:00:00",
+  "status": "SCHEDULED"
+}
+
+### Eliminar un viaje
+DELETE http://localhost:8080/api/trips/1
+
+### Cambiar estado de un viaje
+PATCH http://localhost:8080/api/trips/1/status?status=BOARDING
+
+### Abrir abordaje
+POST http://localhost:8080/api/trips/1/open-boarding
+
+### Cerrar abordaje
+POST http://localhost:8080/api/trips/1/close-boarding
+
+### Marcar como "departed"
+POST http://localhost:8080/api/trips/1/depart

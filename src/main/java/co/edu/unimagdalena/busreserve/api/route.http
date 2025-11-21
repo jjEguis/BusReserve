@@ -1,0 +1,11 @@
+POST http://localhost:8080/api/routes
+Content-Type: application/json
+
+{
+  "code": "R001",
+  "name": "Santa Marta - Ciénaga",
+  "origin": "Santa Marta",
+  "destination": "Ciénaga",
+  "distanceKm": 32,
+  "durationMin": 40
+}

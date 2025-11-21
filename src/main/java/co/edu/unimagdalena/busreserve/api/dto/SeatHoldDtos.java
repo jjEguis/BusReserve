@@ -1,5 +1,4 @@
 package co.edu.unimagdalena.busreserve.api.dto;
-
 import co.edu.unimagdalena.busreserve.domine.entities.HoldStatus;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;

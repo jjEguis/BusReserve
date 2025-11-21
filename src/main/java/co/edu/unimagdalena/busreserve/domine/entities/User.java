@@ -25,6 +25,7 @@ public class User {
     @Column()
     private String phone;
     @Column()
+    @Enumerated(EnumType.STRING)
     private Role role;
     @Column()
     private Boolean status;
