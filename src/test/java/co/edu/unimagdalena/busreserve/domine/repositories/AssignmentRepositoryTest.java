@@ -1,6 +1,8 @@
 package co.edu.unimagdalena.busreserve.domine.repositories;
 
 import co.edu.unimagdalena.busreserve.domine.entities.*;
+import co.edu.unimagdalena.busreserve.domine.entities.Role;
+import co.edu.unimagdalena.busreserve.domine.entities.User;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

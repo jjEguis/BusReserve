@@ -9,7 +9,6 @@ import co.edu.unimagdalena.busreserve.exception.NotFoundException;
 import co.edu.unimagdalena.busreserve.services.mapper.UserMapper;
 import co.edu.unimagdalena.busreserve.services.interfaces.UserService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.context.annotation.Bean;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.security.crypto.password.PasswordEncoder;

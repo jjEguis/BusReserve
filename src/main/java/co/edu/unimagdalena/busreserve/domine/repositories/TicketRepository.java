@@ -1,6 +1,5 @@
 package co.edu.unimagdalena.busreserve.domine.repositories;
 
-import aj.org.objectweb.asm.commons.Remapper;
 import co.edu.unimagdalena.busreserve.domine.entities.Ticket;
 import co.edu.unimagdalena.busreserve.domine.entities.TicketStatus;
 import co.edu.unimagdalena.busreserve.domine.entities.User;

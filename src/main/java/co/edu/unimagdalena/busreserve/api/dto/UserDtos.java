@@ -3,7 +3,7 @@ package co.edu.unimagdalena.busreserve.api.dto;
 import co.edu.unimagdalena.busreserve.domine.entities.Role;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
+
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
@@ -31,4 +31,13 @@ public class UserDtos {
             Boolean status,
             LocalDateTime createdAt
     ) implements Serializable {}
+
+    public record LoginRequest(
+            @NotBlank String email,
+            @NotBlank String password
+    ) implements Serializable {}
+
+
+
+
 }

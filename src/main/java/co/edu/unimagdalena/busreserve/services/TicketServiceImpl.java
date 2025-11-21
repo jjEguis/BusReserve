@@ -4,13 +4,13 @@ import co.edu.unimagdalena.busreserve.api.dto.TicketDtos.*;
 import co.edu.unimagdalena.busreserve.domine.entities.*;
 import co.edu.unimagdalena.busreserve.domine.repositories.*;
 import co.edu.unimagdalena.busreserve.exception.NotFoundException;
+import co.edu.unimagdalena.busreserve.domine.entities.User;
 import co.edu.unimagdalena.busreserve.services.interfaces.TicketService;
 import co.edu.unimagdalena.busreserve.services.mapper.TicketMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
 
